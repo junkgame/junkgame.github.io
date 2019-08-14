@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+  <link rel="stylesheet" href="controls.css"></link>
+  <!-- <script src = "controls.js"></script> -->
+
+ <meta charset="UTF-8">
+
+ <title>JUNK.IO</title>
+
+
+</head>
+
+<body>
+  <img src = "club_penguin_fish.png" id = "guy" width = 50 height = 30></img>
+
+<div class = "food">
+  <img src = "circle.png" id="food1"></img><br>
+  <img src = "circle.png" id="food2"></img><br>
+  <img src = "circle.png" id="food3"></img><br>
+  <img src = "circle.png" id="food4"></img><br>
+  <img src = "circle.png" id="food5"></img><br>
+  <img src = "circle.png" id="food6"></img><br>
+  <img src = "circle.png" id="food7"></img><br>
+  <img src = "circle.png" id="food8"></img><br>
+  <img src = "circle.png" id="food9"></img><br>
+  <img src = "circle.png" id="food10"></img>
+</div>
+
+<div class = "trash">
+  <img src = "triangle.png" id="juul"></img>
+  <img src = "triangle.png" id="water_bottle"></img>
+  <img src = "triangle.png" id="can"></img>
+  <img src = "triangle.png" id="plasticbag"></img>
+  <img src = "triangle.png" id="lays"></img>
+  <img src = "triangle.png" id="tire"></img>
+  <img src = "triangle.png" id="spork"></img>
+  <img src = "triangle.png" id="fishpole"></img>
+  <img src = "triangle.png" id="flipflop"></img>
+  <img src = "triangle.png" id="bottlecap"></img>
+  <img src = "triangle.png" id="straw"></img>
+  <img src = "triangle.png" id="canholder"></img>
+  <img src = "triangle.png" id="worm"></img>
+</div>
+
+<script type="text/javascript">
+
+var guy = document.getElementById("guy");
+var container = document.getElementById("container")
+var guyLeft = 590;
+var y = 250;
+var waldo = [food1, food2, food3, food4, food5, food6, food7, food8, food9, food10];
+food1 = document.getElementById("food1");
+food2 = document.getElementById("food2");
+food3 = document.getElementById("food3");
+food4 = document.getElementById("food4");
+food5 = document.getElementById("food5");
+food6 = document.getElementById("food6");
+food7 = document.getElementById("food7");
+food8 = document.getElementById("food8");
+food9 = document.getElementById("food9");
+food10 = document.getElementById("food10");
+
+function checkWaldo() {
+  for(i = 0; i < 10; i++) {
+    if((waldo[i].offsetLeft + 5 > guyLeft && waldo[i].offsetLeft - 55 < guyLeft) && (waldo[i].offsetTop + 10 > y && waldo[i].offsetTop - 30 < y))
+     {
+      waldo[i].style.visibility = 'hidden';
+      isDone();
+    }
+  }
+}
+
+function isDone() {
+  if(waldo[0].style.visibility == 'hidden'
+    && waldo[1].style.visibility == 'hidden'
+    && waldo[2].style.visibility == 'hidden'
+    && waldo[3].style.visibility == 'hidden'
+    && waldo[4].style.visibility == 'hidden'
+    && waldo[5].style.visibility == 'hidden'
+    && waldo[6].style.visibility == 'hidden'
+    && waldo[7].style.visibility == 'hidden'
+    && waldo[8].style.visibility == 'hidden'
+    && waldo[9].style.visibility == 'hidden') {
+      alert("You win")
+    }
+  }
+
+
+function anim(e) {
+if (e.keyCode == 39) {
+  if(guyLeft !== 1180) {
+    guyLeft += 5; guy.style.left = guyLeft + "px";
+    checkWaldo();
+  }
+}
+else if (e.keyCode == 37) {
+  if(guyLeft !== 10) {
+    guyLeft -= 5; guy.style.left = guyLeft + "px";
+    checkWaldo();
+
+  }
+}
+else if (e.keyCode == 40) {
+  if(y !== 500) {
+    y += 5; guy.style.top = y + "px";
+    checkWaldo();
+  }
+}
+else if (e.keyCode == 38) {
+  if(y !== 10) {
+    y -= 5; guy.style.top = y + "px";
+    checkWaldo();
+  }
+}
+
+} document.onkeydown = anim;
+
+</script>
+
+<BR><BR>
+<div id="aciklama"></div>
+
+</body>
+
+</html>

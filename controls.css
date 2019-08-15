@@ -1,12 +1,3 @@
-#background {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  z-index: -1;
-}
-
 
 #guy {
 position: relative;
@@ -17,8 +8,8 @@ z-index: 0;
 
 #juul {
   position: absolute;
- height: 30px;
- width: 10px;
+ height: 20px;
+ width: 20px;
  left: 75px;
  top: 45px;
  z-index: 1;
@@ -26,8 +17,8 @@ z-index: 0;
 
 #water_bottle {
   position: absolute;
- height: 85px;
- width: 70px;
+ height: 50px;
+ width: 50px;
  left: 315px;
  top: 60px;
  z-index: 1;
@@ -35,26 +26,26 @@ z-index: 0;
 
 #can {
   position: absolute;
- height: 80px;
- width: 35px;
+ height: 50px;
+ width: 50px;
  left: 125px;
- top: 200px;
+ top: 280px;
  z-index: 1;
 }
 
 #plasticbag {
   position: absolute;
- height: 140px;
- width: 160px;
- left: 210px;
+ height: 100px;
+ width: 100px;
+ left: 300px;
  top: 410px;
  z-index: 1;
 }
 
 #lays {
   position: absolute;
- height: 75px;
- width: 75px;
+ height: 50px;
+ width: 50px;
  z-index: 1;
  left: 650px;
  top: 320px;
@@ -65,14 +56,14 @@ z-index: 0;
  height: 200px;
  width: 200px;
  left: 725px;
- top: 30px;
+ top: 70;
  z-index: 1;
 }
 
 #spork{
   position: absolute;
- height: 50px;
- width: 30px;
+ height: 40px;
+ width: 20px;
  left: 885px;
  top: 320px;
  z-index: 1;
@@ -81,7 +72,7 @@ z-index: 0;
 #fishpole{
   position: absolute;
  height: 200px;
- width: 60px;
+ width: 20px;
  z-index: 1;
  left: 450px;
  top: 230px;
@@ -98,8 +89,8 @@ z-index: 0;
 
 #bottlecap{
   position: absolute;
- height: 15px;
- width: 20px;
+ height: 10px;
+ width: 10px;
  left: 960px;
  top: 40px;
  z-index: 1;
@@ -107,8 +98,8 @@ z-index: 0;
 
 #straw{
   position: absolute;
- height: 50px;
- width: 20px;
+ height: 20px;
+ width: 10px;
  z-index: 1;
  left: 1050px;
  top: 190px;
@@ -116,8 +107,8 @@ z-index: 0;
 
 #canholder{
   position: absolute;
- height: 90px;
- width: 170px;
+ height: 50px;
+ width: 200px;
  left: 980px;
  top: 290px;
  z-index: 1;
@@ -125,8 +116,8 @@ z-index: 0;
 
 #worm{
   position: absolute;
- height: 50px;
- width: 20px;
+ height: 7px;
+ width: 50px;
  left: 1145px;
  top: 490px;
  z-index: 1;
@@ -163,7 +154,7 @@ z-index: 0;
   position: absolute;
  height: 10px;
  width: 10px;
- left: 400px;
+ left: 425px;
  top: 225px;
  z-index: 2;
 }
@@ -222,51 +213,6 @@ position: absolute;
  top: 485px;
  z-index: 2;
  /* margin-bottom: 100px; */
-}
-
-#fullheart1{
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  left: 20px;
-  top: 550px;
-  z-index: 3;
-}
-
-
-#fullheart2{
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  left: 40px;
-  top: 550px;
-  z-index: 3;
-}
-
-#fullheart3{
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  left: 60px;
-  top: 550px;
-  z-index: 3;
-}
-
-#screen-log {
-  z-index: 6;
-  left: 60px;
-  top: 500px;
-  color: white;
-}
-
-#message {
-  visibility: hidden;
-  position: absolute;
-  width: 60px;
-  height: 70px;
-  z-index: 3;
-  left: 590px;
-  top: 250px;
 }
 
 </style>

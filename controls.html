@@ -149,14 +149,16 @@ function loselife() {
   lives -= 1;
   if(lives==2) {
     document.getElementById("fullheart1").src = "lives_empty_junkio.png";
+    AlertInsult1();
   }
   if(lives==1) {
     document.getElementById("fullheart2").src = "lives_empty_junkio.png";
+    AlertInsult2();
   }
   if(lives==0) {
     document.getElementById("fullheart3").src = "lives_empty_junkio.png";
-    alert("game over. nice try, loser");
     window.location.href = "junkio.html";
+    AlertInsult3();
   }
 }
 
@@ -173,7 +175,7 @@ function checkTrash() {
     var distY = guyY - trashY;
     var pythagoras = Math.sqrt((distY * distY) + (distX * distX));
     if(comb_radii > pythagoras) {
-      alert("i told you to stay away from the trash, idiot");
+      // alert("i told you to stay away from the trash, idiot");
       youSuck();
     }
   }
@@ -186,6 +188,29 @@ function youSuck() {
   guy.style.top = y + "px";
   loselife();
 }
+
+
+function AlertInsult1() {
+  RandomInteger = Math.floor(Math.random() * 3);
+  insults1 = ["That's one down, stupid. Come on and step up.", "Are you even trying? That was the easiest obstacle.", "My grandma can do better than that with both fins tied behind her back." ];
+  alert(insults1[RandomInteger]);
+}
+
+function AlertInsult2() {
+  RandomInteger = Math.floor(Math.random() * 3);
+  insults2 = ["You are embarassing youself, dude. Come on." , "Please. This is not a joke. It is your life on the line" , "How about you try this time. Is it that hard?" ];
+  alert(insults2[RandomInteger]);
+}
+
+function AlertInsult3() {
+  RandomInteger = Math.floor(Math.random() * 3);
+  insults3 = ["Wow. I've never seen such a bad performance. Game over." , "game over. nice try, loser. wouldn't be so hard if you cleaned up a bit." , "Well that was short. Game over." ];
+  alert(insults3[RandomInteger]);
+
+}
+
+
+
 
 function anim(e) {
   if (e.keyCode == 39) {

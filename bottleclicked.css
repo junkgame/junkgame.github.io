@@ -3,8 +3,8 @@ img.background {
   height: 100%;
   position: fixed;
   z-index: -1;
-  border-left: 0;
-  border-top: 0;
+  left: 0;
+  top: 0;
 }
 
 
@@ -29,7 +29,7 @@ p
   margin-top: 10%;
   margin-bottom: 30%;
   font-family: "Lucidia console", monospace;
-  font-size: 30px;
+  font-size: 28px;
   position: fixed;
   color: darkgreen;
   margin-left: 25%;

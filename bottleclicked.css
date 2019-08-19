@@ -7,6 +7,9 @@ img.background {
   top: 0;
 }
 
+audio {
+   display: none;
+}
 
 #homebutton
 {
@@ -29,10 +32,10 @@ p
   margin-top: 10%;
   margin-bottom: 30%;
   font-family: "Lucidia console", monospace;
-  font-size: 28px;
+  font-size: 36px;
   position: fixed;
   color: darkgreen;
-  margin-left: 25%;
-  margin-right: 30%;
+  margin-left: 27%;
+  margin-right: 35%;
   z-index: 2;
 }

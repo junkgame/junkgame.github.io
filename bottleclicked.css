@@ -32,8 +32,8 @@ p
   margin-top: 10%;
   margin-bottom: 30%;
   font-family: "Lucidia console", monospace;
-  font-size: 36px;
-  position: fixed;
+  font-size: 34px;
+  position: absolute;
   color: darkgreen;
   margin-left: 27%;
   margin-right: 35%;
@@ -41,7 +41,7 @@ p
 }
 
 #link {
-  margin-top: 40%;
+  margin-top: 38%;
   margin-bottom: 30%;
   font-family: "Lucidia console", monospace;
   font-size: 26px;

@@ -3,6 +3,9 @@
 <head>
   <title>Junk.io</title>
   <link rel="shortcut icon" type="image/x-icon" href="fishicon.png"></link>
+  <audio autoplay="true" src="Sad_Violin.mp3" controls> </audio>
+
+
 </head>
 <body>
   <img src="background_junkio.png" alt="background" class = "background">
@@ -18,19 +21,22 @@
       z-index: -1;
       left: 0;
       top: 0;
+
+    audio {
+       display: none;
+    }
+
     }
     #homebutton
     {
       width: 10%;
       z-index: 2;
     }
-
     #title {
       font-family: "Lucidia Console", monospace;
       font-size: 50px;
       text-align: center;
     }
-
     #tips
     {
       font-family: "Lucidia console", monospace;
@@ -40,7 +46,6 @@
       margin-left: 5%;
       margin-right: 5%;
     }
-
     #RETURN {
       font-family: "Lucidia console", monospace;
       font-size: 30px;
@@ -48,7 +53,6 @@
       text-align: center;
       margin-left: 43%;
     }
-
   </style>
 </body>
 </html>

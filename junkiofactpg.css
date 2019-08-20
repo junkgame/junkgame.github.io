@@ -52,3 +52,11 @@ margin-left: 80%;
 margin-top: 20%;
 z-index: 2;
 }
+
+mark {
+  font-family: "Lucidia console", monospace;
+  font-size: 30px;
+  background: none;
+  /* color: rgb(244, 255, 59); yellow */
+  color: rgb(255, 59, 224);
+}

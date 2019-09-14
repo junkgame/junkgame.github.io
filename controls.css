@@ -275,6 +275,13 @@ position: absolute;
  z-index: 2;
  /* margin-bottom: 100px; */
 }
+#food11{
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  left: 1005px;
+  top: 300px;
+}
 
 #fullheart1{
   position: absolute;
